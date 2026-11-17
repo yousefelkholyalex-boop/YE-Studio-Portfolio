@@ -1,0 +1,8 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{@apply bg-ink text-white font-sans antialiased}
+@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.page{animation:fi .6s ease both}
+.btn{@apply inline-flex items-center justify-center border border-white/30 px-6 py-3 text-sm tracking-wide transition hover:bg-white hover:text-black}
+.btn-g{@apply border-gold bg-gold text-black hover:bg-white hover:border-white}
+.in{@apply w-full bg-transparent border-b border-line py-3 outline-none focus:border-gold transition}
+@media (prefers-reduced-motion:reduce){.page{animation:none}}
